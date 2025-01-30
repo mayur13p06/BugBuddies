@@ -3,13 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar"; // Navbar includes ProfileIcon
 import Home from "./Pages/Home";
 import Events from "./Pages/Events";
-import flat from "./Pages/Flatmate";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/SignIn";
 import Register from "./Pages/Register";
 import Community from "./Pages/Community";
-
-import { UserProvider } from "./Components/UserContext"; // Import UserContext
+import { UserProvider } from "./Components/UserContext";
+import FlatmateFinder from "./Pages/Flatmate";
 import ProtectedRoute from "./Components/ProtectedRoute"; // Import ProtectedRoute
 import "./Styling/styles.css"; // Global styles
 
@@ -37,28 +36,27 @@ function App() {
               </ProtectedRoute>
             }
           />
-          
           <Route
-            path="/Events"
+            path="/events"
             element={
               <ProtectedRoute>
-                <Contact />
+                <Events />
               </ProtectedRoute>
             }
-            />
-            <Route
-            path="/flat"
-            element={
-              <ProtectedRoute>
-                <Contact />
-              </ProtectedRoute>
-            }
-            />
+          />
           <Route
             path="/contact"
             element={
               <ProtectedRoute>
                 <Contact />
+              </ProtectedRoute>
+            }
+          />
+            <Route
+            path="/flat"
+            element={
+              <ProtectedRoute>
+                <FlatmateFinder />
               </ProtectedRoute>
             }
           />

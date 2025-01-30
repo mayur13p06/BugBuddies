@@ -382,11 +382,13 @@ body {
   }
   
   .close-popup {
-    background: none;
-    border: none;
+    background: red;
+    border: red;
     font-size: 20px;
     cursor: pointer;
     float: right;
+    color: white;
+    
   }
   
   .chat-messages {
