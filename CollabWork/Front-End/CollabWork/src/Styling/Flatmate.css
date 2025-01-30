@@ -1,0 +1,146 @@
+/* Flatmate.css */
+
+/* General styling */
+.flatmate-finder {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flatmate-finder h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .flatmate-finder p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Form styling */
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .form-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Confirmation message */
+  .confirmation-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Matched flatmates styling */
+  .matched-flatmates {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .matched-flatmates h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .matched-flatmates ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .matched-flatmates li {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .matched-flatmates li strong {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .matched-flatmates li p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .matched-flatmates button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .matched-flatmates button:hover {
+    background-color: #218838;
+  }
+  
+  /* No matches message */
+  .matched-flatmates p {
+    text-align: center;
+    color: #dc3545;
+    font-weight: bold;
+  }

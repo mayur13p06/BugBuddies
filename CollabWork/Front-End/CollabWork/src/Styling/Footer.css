@@ -1,0 +1,73 @@
+/* General Body and HTML Styling */
+html, body {
+  height: 100%; /* Ensures the page height matches the viewport */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+/* Flexbox for Page Layout */
+body {
+  display: flex;
+  flex-direction: column; /* Arrange content in a vertical column */
+  min-height: 100vh; /* Ensure the body spans the full viewport height */
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1; /* Allows the main content to grow and fill available space */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: rgb(47, 67, 86); /* Deep maroon color */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1rem;
+  margin-top: auto; /* Pushes footer to the bottom if content is short */
+}
+
+/* Footer Text Styling */
+.footer p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* Footer Links List */
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between links */
+}
+
+/* Footer Links Styling */
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff; /* White links */
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcccb; /* Light pink hover color */
+}
+
+/* Media Queries for Footer */
+@media (max-width: 768px) {
+  .footer {
+      padding: 15px 0; /* Adjusted padding for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px 0; /* Further reduced padding for mobile devices */
+  }
+}
