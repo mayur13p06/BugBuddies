@@ -38,11 +38,7 @@ function Navbar() {
             Events
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/join" activeclassname="active">
-            Join Group
-          </NavLink>
-        </li>
+       
         <li>
           <NavLink to="/flat" activeclassname="active">
             Find Flatmate

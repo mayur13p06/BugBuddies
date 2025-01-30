@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import "../Styling/Home.css";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"; // Framer Motion for animations
+
 
 function Home() {
   const [showChat, setShowChat] = useState(false);
@@ -14,7 +15,7 @@ function Home() {
   };
 
   const handleSignUpClick = () => {
-    navigate("/register"); // Navigate to the register page
+    navigate("/register"); // ✅ Now this will work
   };
 
   const sendMessage = () => {
