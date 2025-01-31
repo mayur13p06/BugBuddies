@@ -1,0 +1,287 @@
+/* General container styling */
+.signin-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb; /* Light gray background */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Logo styling */
+.signin-logo, .register-logo {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Card container */
+.signin-card, .register-card {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+/* Heading and subtext */
+.signin-card h2, .register-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.signin-subtext, .register-subtext {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.signin-field, .register-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.signin-field label, .register-field label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signin-field input, .register-field input,
+.signin-field select, .register-field select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+.signin-field input:focus, .register-field input:focus,
+.signin-field select:focus, .register-field select:focus {
+  outline: none;
+  border-color: #2684fc;
+  box-shadow: 0 0 3px rgba(38, 132, 252, 0.3);
+}
+
+/* Multi-select dropdown */
+.multi-select-dropdown {
+  width: 100%;
+  padding: 8px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.multi-select-dropdown:focus {
+  border-color: #2684fc;
+  outline: none;
+}
+
+/* Password input container */
+.password-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-input-container input {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.password-toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #2684fc;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.password-toggle-btn:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.signin-submit-btn, .register-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #2684fc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-submit-btn:hover, .register-submit-btn:hover {
+  background-color: #1c6ed8;
+}
+
+/* Google button */
+.signin-google-btn, .register-google-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.signin-google-btn:hover, .register-google-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Divider */
+.signin-divider, .register-divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.signin-divider span, .register-divider span {
+  background-color: #fff;
+  padding: 0 10px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.signin-divider::before, .signin-divider::after,
+.register-divider::before, .register-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.signin-divider::before, .register-divider::before {
+  left: 0;
+}
+
+.signin-divider::after, .register-divider::after {
+  right: 0;
+}
+
+/* Link styles for Register page */
+.register-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-link-text {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link-text:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.register-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: white;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow for Safari */
+  -moz-appearance: none; /* Remove default arrow for Firefox */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.register-field select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+/* Searchable dropdown input */
+.interest-search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.interest-search-input:focus {
+  border-color: #2684fc;
+  outline: none;
+}
+
+/* Selected interests display */
+.selected-interests {
+  margin-top: 10px;
+}
+
+.interest-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.remove-tag-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #ff0000;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.remove-tag-btn:hover {
+  color: #cc0000;
+}
+
+/* Password input container */
+.password-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}

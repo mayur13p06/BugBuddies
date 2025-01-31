@@ -1,0 +1,213 @@
+/* Flatmate.css */
+
+/* General styling for the flatmate finder container */
+.flatmate-finder {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group select {
+  appearance: none;
+  background-color: #fff;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9f5ff;
+  border-left: 4px solid #007bff;
+  color: #333;
+}
+
+/* Matched flatmates section */
+.matched-flatmates {
+  margin-top: 30px;
+}
+
+.matched-flatmates ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.matched-flatmates li {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.matched-flatmates li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.matched-flatmates li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.matched-flatmates li:hover::before {
+  transform: scaleX(1);
+}
+
+.matched-flatmates li strong {
+  font-size: 22px;
+  color: #007bff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.matched-flatmates li strong::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  border-radius: 2px;
+}
+
+.matched-flatmates li p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.matched-flatmates li p span {
+  font-weight: bold;
+  color: #333;
+  min-width: 100px; /* Ensures consistent alignment for labels */
+}
+
+.matched-flatmates li p i {
+  color: #007bff; /* Icon color */
+  font-size: 16px; /* Icon size */
+}
+
+.matched-flatmates li button {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.matched-flatmates li button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6));
+  transition: left 0.5s ease;
+}
+
+.matched-flatmates li button:hover::before {
+  left: 100%;
+}
+
+.matched-flatmates li button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.matched-flatmates li button:active {
+  transform: translateY(0);
+}
+
+/* No matches message */
+.matched-flatmates p {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  font-size: 16px;
+}

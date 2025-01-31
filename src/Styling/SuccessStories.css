@@ -1,0 +1,123 @@
+/* Success Stories Page */
+.success-stories-page {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Success Stories Container */
+.success-stories-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Stories Header */
+.success-stories-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.success-stories-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.success-stories-header p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Stories List */
+.stories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Individual Story */
+.story {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.story p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .success-stories-header h1 {
+    font-size: 28px;
+  }
+
+  .success-stories-header p {
+    font-size: 16px;
+  }
+
+  .stories-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .story {
+    padding: 20px;
+  }
+
+  .story h2 {
+    font-size: 22px;
+  }
+
+  .story p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-stories-header h1 {
+    font-size: 24px;
+  }
+
+  .success-stories-header p {
+    font-size: 14px;
+  }
+
+  .story h2 {
+    font-size: 20px;
+  }
+
+  .story p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,260 @@
+/* Reset & General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Full-Screen Dashboard Layout */
+.dashboard-container {
+  display: table-row;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #ff6b00;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align content to the left */
+  height: 100vh; /* Full height sidebar */
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px; /* More space for title */
+  text-align: center; /* Centers the title */
+  letter-spacing: 1px; /* Optional: Adds a subtle space between letters */
+  
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: white;
+  color: #ff6b00;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px; /* Space between buttons */
+  transition: 0.3s ease;
+  text-align: left; /* Ensures button text is aligned to the left */
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Aligns text and icon properly */
+  gap: 10px; /* Space between icon and text */
+}
+
+.sidebar button:hover {
+  background-color: #ffe5cc; /* Light orange hover effect */
+  transform: translateX(5px); /* Optional: Slide effect */
+}
+
+.sidebar button.active {
+  background-color: #e65a00; /* Highlight active button */
+  color: white;
+}
+
+.sidebar button .icon {
+  font-size: 20px; /* Optional: Adjust icon size */
+}
+
+/* Main Content (Full Width) */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Form Styling */
+.event-form, .user-form {
+  background-color: white;
+  padding: 30px; /* Increase padding for card effect */
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+  display: block; /* Stack fields vertically */
+  width: 100%;
+  max-width: 500px; /* Limit the width of the form */
+  margin: 20px auto; /* Center the form horizontally and add some margin */
+}
+
+/* Input Fields */
+.event-form input, .event-form button,
+.user-form input, .user-form button {
+  width: 100%; /* Ensure each field takes up the full width */
+  padding: 12px;
+  border-radius: 8px; /* Rounded corners for input fields */
+  border: 2px solid #ccc; /* Border size */
+  margin-bottom: 15px; /* Add space between fields */
+  background-color: #f9f9f9; /* Slightly lighter background for inputs */
+  color: #333; /* Change text color to dark gray */
+}
+
+/* Change color of input field when focused */
+.event-form input:focus, .user-form input:focus {
+  border-color: #ff6b00; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Change placeholder text color */
+.event-form input::placeholder, .user-form input::placeholder {
+  color: rgb(87, 85, 85); /* Set placeholder text color */
+}
+
+/* Buttons */
+.event-form button, .user-form button {
+  background-color: #ff6b00;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 12px;
+  border-radius: 8px; /* Rounded corners for button */
+}
+
+.event-form button:hover, .user-form button:hover {
+  background-color: #e65a00;
+}
+
+/* Form Title */
+.event-form h3, .user-form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px; /* Add space between title and form */
+  text-align: center; /* Centers the title */
+  color: #333; /* Dark color for the title */
+}
+
+
+/* Event Table */
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.event-table th, .event-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.event-table th {
+  background-color: #ff6b00;
+  color: white;
+  font-weight: bold;
+}
+
+.event-table td {
+  color: #333;
+}
+
+.event-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row colors */
+}
+
+.event-table tr:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+
+.event-item .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.event-item .edit, .event-item .delete {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.event-item .edit {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.event-item .delete {
+  background-color: #ff3b30;
+  color: white;
+}
+
+.event-item .edit:hover {
+  background-color: #e6b800;
+}
+
+.event-item .delete:hover {
+  background-color: #cc2b20;
+}
+
+.event-item .edit:focus, .event-item .delete:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #ff6b00; /* Focus effect */
+}
+
+/* Button Container */
+.user-item .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Login Form */
+.login-container {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #3498db;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #d93b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.login-container button:hover {
+  background: #d35400;
+}

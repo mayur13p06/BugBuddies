@@ -1,0 +1,170 @@
+/* Opportunities Container */
+.opportunities-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section input {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-section input:focus {
+  border-color: #007bff;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Event Card */
+.event-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%; /* Ensure cards take up equal space */
+}
+
+/* Event Card Hover */
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+/* Event Image Container */
+.event-image-container {
+  width: 100%;
+  height: 150px; /* Reduced height for images */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.event-card:hover .event-image {
+  transform: scale(1.05);
+}
+
+/* Event Details */
+.event-details {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-details h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.event-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px; /* Reduced margin */
+  line-height: 1.4; /* Adjusted line height */
+}
+
+/* Event Buttons */
+.event-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 15px; /* Reduced padding */
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.register-btn, .info-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.register-btn {
+  background: #28a745;
+  color: white;
+  flex: 1;
+}
+
+.info-btn {
+  background: #007bff;
+  color: white;
+  flex: 1;
+}
+
+.register-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.info-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Loading Message */
+.loading-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 16px;
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+/* Registration Message */
+.registration-message {
+  margin-top: 10px;
+  background: #d4edda;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #155724;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+}
